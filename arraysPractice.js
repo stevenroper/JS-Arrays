@@ -169,9 +169,15 @@ alert(addItem(myGroceryList, 'milk'));
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
-  //Code Here
+var maker = function() {
+  var array = [];
+  for(var i = 1; i <= 215; i++) {
+    array.push(i);
+  }
+  return array;
+}
 
-
+alert(maker());
 
 //Next Problem
 
