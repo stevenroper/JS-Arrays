@@ -214,7 +214,16 @@ for(var i = 0; i < num2; i++){
 //Above is some code that adds a random number to both arr1 and arr2.
 //Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
 
-  //Code Here
+var longestArray = function(arr1, arr2) {
+    if(arr1.length > arr2.length) {
+        return arr1;
+    }
+    else {
+        return arr2
+    }
+}
+
+alert("Array 1: " + arr1 + "Array 2: " + arr2 + "Longest Array: " + longestArray(arr1, arr2));
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
