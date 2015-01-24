@@ -231,20 +231,21 @@ alert("Array 1: " + arr1 + "Array 2: " + arr2 + "Longest Array: " + longestArray
   'both' should return a new array full of numbers that are found in both arr1 and arr2.
 */
 
-var both = function(arr1, arr2) {
+var both = function (inputArray1, inputArray2) {
     var combArray = [];
-    for(var i = 0; i < arr1.length; i++) {
-        combArray.push(arr1[i]);
-    }
-    for(var i = 0; i < arr2.length; i++) {
-        combArray.push(arr2[i]);
+    for(var i = 0; i < inputArray1.length; i++) {
+        for(var j = 0; j < inputArray2.length; j++) {
+            if (inputArray1[i] === inputArray2[j]) {
+                combArray.push(inputArray1[i]);    
+            }
+        }
     }
     return combArray;
-}
+};
 
-alert(arr1);
-alert(arr2);
-alert(both(arr1, arr2));
+console.log("Array 1: " + arr1);
+console.log("Array 2: " + arr2);
+console.log(both(arr1, arr2));
 
 
 
